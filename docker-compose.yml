@@ -1,0 +1,42 @@
+version: '3'
+services:
+  front:
+    build: ./docker/front
+    volumes:
+      - ./front:/app
+    command: 'yarn dev'
+    ports:
+      - "3000:3000"
+  api:
+    build: ./api
+    container_name: api-ruby
+    tty: true
+    volumes:
+      - ./api:/api
+    ports:
+      - "8000:8000"
+    environment:
+      MYSQL_ROOT_PASSWORD: $MYSQL_ROOT_PASSWORD
+      SELENIUM_DRIVER_URL: "http://chrome:4444/wd/hub"
+    command: bundle exec rails s -p 8000 -b '0.0.0.0'
+    depends_on:
+      - db
+  db:
+    image: mysql/mysql-server:5.7.28
+    container_name: db
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+      MYSQL_ROOT_HOST: '%'
+    ports:
+      - "3306:3306"
+    volumes:
+      - db-volume:/var/lib/mysql
+  chrome:
+    image: seleniarm/standalone-chromium
+    container_name: chrome
+    ports:
+      - "4444:4444"
+    # ref: https://github.com/seleniumhq-community/docker-seleniarm#--shm-size2g
+    shm_size: 2gb
+volumes:
+  db-volume:

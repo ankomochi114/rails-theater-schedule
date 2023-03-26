@@ -1,0 +1,25 @@
+# Logfile created on 2023-03-26 16:50:22 +0900 by logger.rb/v1.5.3
+2023-03-26 16:50:22 WARN Selenium [:logger_info] Details on how to use and modify Selenium logger:
+  https://selenium.dev/documentation/webdriver/troubleshooting/logging#ruby
+
+2023-03-26 16:50:22 WARN Selenium [DEPRECATION] [:caps_browsers] Remote::Capabilities.chrome is deprecated. Use Options.chrome instead.
+2023-03-26 17:09:34 WARN Selenium [:logger_info] Details on how to use and modify Selenium logger:
+  https://selenium.dev/documentation/webdriver/troubleshooting/logging#ruby
+
+2023-03-26 17:09:34 WARN Selenium [DEPRECATION] [:caps_browsers] Remote::Capabilities.chrome is deprecated. Use Options.chrome instead.
+2023-03-26 17:12:12 WARN Selenium [:logger_info] Details on how to use and modify Selenium logger:
+  https://selenium.dev/documentation/webdriver/troubleshooting/logging#ruby
+
+2023-03-26 17:12:12 WARN Selenium [DEPRECATION] [:caps_browsers] Remote::Capabilities.chrome is deprecated. Use Options.chrome instead.
+2023-03-26 17:14:30 WARN Selenium [:logger_info] Details on how to use and modify Selenium logger:
+  https://selenium.dev/documentation/webdriver/troubleshooting/logging#ruby
+
+2023-03-26 17:14:30 WARN Selenium [DEPRECATION] [:caps_browsers] Remote::Capabilities.chrome is deprecated. Use Options.chrome instead.
+2023-03-26 17:15:39 WARN Selenium [:logger_info] Details on how to use and modify Selenium logger:
+  https://selenium.dev/documentation/webdriver/troubleshooting/logging#ruby
+
+2023-03-26 17:15:39 WARN Selenium [DEPRECATION] [:caps_browsers] Remote::Capabilities.chrome is deprecated. Use Options.chrome instead.
+2023-03-26 17:16:42 WARN Selenium [:logger_info] Details on how to use and modify Selenium logger:
+  https://selenium.dev/documentation/webdriver/troubleshooting/logging#ruby
+
+2023-03-26 17:16:42 WARN Selenium [DEPRECATION] [:caps_browsers] Remote::Capabilities.chrome is deprecated. Use Options.chrome instead.
